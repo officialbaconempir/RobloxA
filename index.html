@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UNKNOWN</title>
+</head>
+<body>
+    <h1>CONNECTION ESTABLISHED</h1>
+    <p>ENTER ACCESS CODE</p>
+
+    <input id="code">
+    <button onclick="check()">SUBMIT</button>
+
+    <p id="result"></p>
+
+    <script>
+        function check() {
+            if (document.getElementById("code").value === "254") {
+                document.getElementById("result").innerText = "LOOK CLOSER";
+            } else {
+                document.getElementById("result").innerText = "ACCESS DENIED";
+            }
+        }
+    </script>
+</body>
+</html>
